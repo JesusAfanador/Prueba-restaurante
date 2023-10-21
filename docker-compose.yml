@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  backend:
+    container_name: backend
+    build: ./backend
+    expose:
+      - 3002
+    volumes:
+      - ./backend:/usr/src/app
+    environment:
+      - DB_HOST=app.wowdesarrollos.com
+      - DB_USER=root
+      - DB_PASSWORD=YVSJ&5fDo67AAghi
+      - DB_DATABASE=disfrutadb
+      - CLAVE="clave"
+      - SECRETO="secreto"
+      - FRONT_END=
+      - DB_PORT=5558
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    expose:
+      - 3000
+    volumes:
+      - ./frontend:/usr/src/app
+    environment:
+      - REACT_APP_CLAVE_DOS=clave
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    links:
+      - backend
+      - frontend
+    restart: always

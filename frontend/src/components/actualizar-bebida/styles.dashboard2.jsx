@@ -1,0 +1,171 @@
+import styled from "styled-components"
+import "../../App.css"
+
+export const Pagina = styled.div`
+    font-family: var(--tipo-letra);
+    height: 100vh;
+    width: 100%;
+`;
+
+export const Background = styled.div`
+    height: 100%;
+    width: 100%;
+`;
+
+export const Receta = styled.div`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+`;
+
+export const Hoja1 = styled.form`
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const Hoja2 = styled.form`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media  screen and (min-width: 1250px ) {
+        height: 80%;
+    }
+`;
+
+export const ConInfor = styled.div`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff94;
+`;
+
+export const Div = styled.div`
+`;
+
+export const Name = styled.div`
+    color: white;
+`;
+
+export const Infor = styled.input`
+    background-color: transparent;
+    border:1px solid #ffff;
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    width: 20em;
+    font-size: 15px;
+`;
+
+export const Infor2 = styled.input`
+`;
+
+export const Entrar = styled.button`
+    border: none;
+    width: 130px;
+    height: 3em;
+    background-color: var(--color-azul);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:18px;
+`;
+
+export const ContentImg = styled.div`
+    height: 200px;
+    width: 200px;
+    background-color: #acacac6e;
+    background-repeat: no-repeat;
+    background-size: 97%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    @media  screen and (max-height: 600px ) {
+        height: 210px;
+        width: 150px;
+    }
+`;
+
+export const ImgPlato = styled.img`
+    height: 180px;
+    width: 160px;
+    margin-right: 15px;
+    transform: rotate(-3deg);
+    position: relative;
+    left: 3%;
+    top: -2%;
+    @media  screen and (max-height: 600px ) {
+        height: 100px;
+        width: 95px;
+        left: 4%;
+    }
+`;
+
+export const Sticker = styled.div`
+`;
+
+export const Sticker2 = styled.div`
+`;
+
+export const DivPrincipal = styled.div`
+    height: 90%;
+    width: 90%;
+    background-color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 0 0  8px 8px ;
+    position: relative;
+    @media  screen and (max-width: 670px ) {
+        height: 120%
+    }
+    @media  screen and (min-width: 1020px ) {
+        flex-direction: row;
+        justify-content: center;
+        height: 60%;
+        width: 80%;
+    }
+    @media  screen and (max-height: 450px ) {
+        height: 200%;
+        box-shadow: none;
+    }
+`;
+
+export const P = styled.p`
+    display: flex;
+    font-size: 20px;
+`;
+
+export const Box = styled.div`
+    width: 300px;
+    display: flex;
+    justify-content: center;
+`;
+
+export const Button = styled.button`
+    height: 3em;
+    width: 150px;
+    background-color: var(--color-azul);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+`;
